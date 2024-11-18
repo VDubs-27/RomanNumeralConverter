@@ -1,0 +1,109 @@
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Main Container */
+main {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  width: 90%;
+  max-width: 400px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Input and Button Container */
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between input and button */
+  margin-bottom: 20px;
+}
+
+/* Input Field */
+#number {
+  flex: 1; /* Take up remaining space */
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#number:focus {
+  outline: none;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Button Styling */
+#convert-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.3s ease-in-out;
+}
+
+#convert-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#convert-btn:active {
+  transform: scale(0.95);
+}
+
+/* Output Styling */
+#output {
+  margin-top: 12px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+#heading-text {
+  margin-top: 12px;
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 10px;
+  border-radius: 5px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}*/
